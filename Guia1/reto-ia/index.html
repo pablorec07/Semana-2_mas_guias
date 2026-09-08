@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio Comercial El Salvador - Tu Centro Comercial en Línea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="#inicio" class="logo">Directorio<span>SV</span></a>
+
+            <form class="search-bar" role="search">
+                <input type="text" placeholder="Busca un comercio, servicio o categoría...">
+                <button type="submit">Buscar</button>
+            </form>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <!-- El dropdown ahora se controla con JavaScript (clic), no con CSS :hover -->
+                    <li class="has-dropdown">
+                        <button type="button" class="dropdown-toggle" aria-expanded="false">Categorías <span class="arrow">▾</span></button>
+                        <ul class="dropdown">
+                            <li><a href="#categorias">Restaurantes</a></li>
+                            <li><a href="#categorias">Automotriz</a></li>
+                            <li><a href="#categorias">Construcción</a></li>
+                            <li><a href="#categorias">Tecnología</a></li>
+                            <li><a href="#categorias">Bienes Raíces</a></li>
+                            <li><a href="#categorias">Hoteles</a></li>
+                            <li><a href="#categorias">Belleza</a></li>
+                            <li><a href="#categorias">Educación</a></li>
+                            <li><a href="#categorias">Entretenimiento</a></li>
+                            <li><a href="#categorias">Eventos</a></li>
+                            <li><a href="#categorias">Ferreterías</a></li>
+                            <li><a href="#categorias">Floristerías</a></li>
+                            <li><a href="#categorias">Gimnasios</a></li>
+                            <li><a href="#categorias">Mascotas</a></li>
+                            <li><a href="#categorias">Pastelerías</a></li>
+                            <li><a href="#categorias">Seguros</a></li>
+                            <li><a href="#categorias">Zapaterías</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#nosotros">Quiénes Somos</a></li>
+                    <li><a href="#contacto">Contáctenos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio">
+        <div class="hero-text">
+            <p class="hero-eyebrow">El Salvador</p>
+            <h1>Todo comercio salvadoreño, a un clic de distancia.</h1>
+            <p class="hero-sub">
+                Encuentra restaurantes, servicios profesionales, tiendas y mucho más,
+                reunidos en un solo directorio pensado para tu zona.
+            </p>
+            <div class="hero-actions">
+                <a href="#categorias" class="btn btn-primary">Explorar categorías</a>
+                <a href="#registro" class="btn btn-outline">Registrar mi negocio</a>
+            </div>
+        </div>
+        <div class="hero-panel">
+            <p class="hero-panel-label">Búsqueda por ubicación</p>
+            <p class="hero-panel-text">Activa tu ubicación y descubre los comercios más cercanos a ti, ordenados por distancia.</p>
+            <button class="btn btn-panel">Usar mi ubicación</button>
+        </div>
+    </section>
+
+    <!-- ===================== CATEGORIAS ===================== -->
+    <section class="categories" id="categorias">
+        <div class="section-heading">
+            <h2>Explora por categoría</h2>
+            <p>Diecisiete rubros, un mismo lugar.</p>
+        </div>
+
+        <!-- Nota: en la version real, cada tarjeta enlazaria a un listado de negocios de esa categoria.
+             Como esas paginas individuales no forman parte de este ejercicio, las tarjetas son informativas. -->
+        <div class="category-grid">
+            <div class="category-card accent-mango">
+                <h3>Restaurantes y Comida</h3>
+                <p>Desde comida típica hasta las últimas aperturas gastronómicas.</p>
+            </div>
+            <div class="category-card accent-forest">
+                <h3>Salud y Bienestar</h3>
+                <p>Clínicas, spas y centros de bienestar cerca de ti.</p>
+            </div>
+            <div class="category-card accent-navy">
+                <h3>Automotriz y Repuestos</h3>
+                <p>Talleres, repuestos y servicios para tu vehículo.</p>
+            </div>
+            <div class="category-card accent-mango">
+                <h3>Construcción y Remodelación</h3>
+                <p>Materiales, contratistas y proyectos de todo tamaño.</p>
+            </div>
+            <div class="category-card accent-forest">
+                <h3>Tecnología y Computación</h3>
+                <p>Soporte técnico, equipos y soluciones digitales.</p>
+            </div>
+            <div class="category-card accent-navy">
+                <h3>Bienes Raíces</h3>
+                <p>Compra, venta y alquiler de propiedades en el país.</p>
+            </div>
+            <div class="category-card accent-mango">
+                <h3>Hoteles y Turismo</h3>
+                <p>Hospedaje y experiencias para tu próxima escapada.</p>
+            </div>
+            <div class="category-card accent-forest">
+                <h3>Finanzas y Seguros</h3>
+                <p>Protege lo que más te importa con asesoría confiable.</p>
+            </div>
+            <div class="category-card accent-navy">
+                <h3>Educación y Academias</h3>
+                <p>Colegios, universidades y academias especializadas.</p>
+            </div>
+        </div>
+
+        <div class="category-more">
+            <p>También encontrarás: Ferreterías, Floristerías, Gimnasios, Mascotas, Pastelerías, Zapaterías, Eventos y Entretenimiento.</p>
+        </div>
+    </section>
+
+    <!-- ===================== CTA NEGOCIOS / REGISTRO ===================== -->
+    <section class="cta-business" id="registro">
+        <div class="cta-content">
+            <h2>¿Tienes un negocio? Súmalo al directorio.</h2>
+            <p>Los primeros comercios en inscribirse reciben un 35% de descuento en su pre-inscripción, por tiempo limitado.</p>
+
+            <form class="registro-form">
+                <input type="text" placeholder="Nombre del negocio" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="tel" placeholder="Teléfono / WhatsApp" required>
+                <button type="submit" class="btn btn-primary">Quiero mi 35% de descuento</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===================== QUIENES SOMOS ===================== -->
+    <section class="nosotros" id="nosotros">
+        <div class="section-heading">
+            <h2>Quiénes Somos</h2>
+        </div>
+        <p class="nosotros-text">
+            Directorio Comercial El Salvador nació con la idea de reunir en un mismo lugar a los comercios,
+            profesionales y emprendedores del país, para que cualquier persona pueda encontrarlos facilmente
+            desde su celular o computadora. Creemos en impulsar el comercio local salvadoreño dandole visibilidad
+            en internet a un costo accesible.
+        </p>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section class="contacto" id="contacto">
+        <div class="section-heading">
+            <h2>Contáctenos</h2>
+            <p>Escríbenos y con gusto te ayudamos.</p>
+        </div>
+        <div class="contacto-grid">
+            <div>
+                <h4>WhatsApp</h4>
+                <p>6448-9802</p>
+            </div>
+            <div>
+                <h4>Correo</h4>
+                <p>info@directoriocomercialelsalvador.com</p>
+            </div>
+            <div>
+                <h4>Horario</h4>
+                <p>Lunes a Sábado, 8:00 a 18:00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <p class="logo">Directorio<span>SV</span></p>
+                <p>Tu centro comercial en línea. Conectamos comercios salvadoreños con las personas que los buscan.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#nosotros">Quiénes Somos</a></li>
+                    <li><a href="#contacto">Contáctenos</a></li>
+                    <li><a href="#registro">Registrar mi negocio</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>WhatsApp: 6448-9802</li>
+                    <li>info@directoriocomercialelsalvador.com</li>
+                    <li>Lunes a Sábado, 8:00 a 18:00</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Síguenos</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/directoriocomercialelsalvador" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://twitter.com/DirComerSV" target="_blank" rel="noopener">Twitter / X</a></li>
+                    <li><a href="https://www.instagram.com/directoriocomercialelsalvador/" target="_blank" rel="noopener">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2020 - 2026 Directorio Comercial El Salvador. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ===================== JAVASCRIPT MINIMO ===================== -->
+    <!-- Solo se usa para abrir/cerrar el menu de categorias con clic -->
+    <script>
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+        const dropdownParent = document.querySelector('.has-dropdown');
+
+        dropdownToggle.addEventListener('click', function () {
+            const isOpen = dropdownParent.classList.toggle('open');
+            dropdownToggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        // Cierra el menu si se hace clic fuera de el
+        document.addEventListener('click', function (event) {
+            if (!dropdownParent.contains(event.target)) {
+                dropdownParent.classList.remove('open');
+                dropdownToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    </script>
+
+</body>
+</html>

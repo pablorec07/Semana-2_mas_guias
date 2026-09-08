@@ -1,0 +1,112 @@
+/* ============================= */
+/* Estilos generales de la pagina */
+/* ============================= */
+body {
+    background-color: #1a1a1a; /* fondo oscuro, tipo mazmorra */
+    color: #e0e0e0; /* texto claro para que se lea bien sobre el fondo oscuro */
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================= */
+/* Encabezado con el banner       */
+/* ============================= */
+#main-header {
+    background-color: #3b0a0a; /* rojo oscuro, referencia al tono del juego */
+    text-align: center;
+    padding: 20px;
+}
+
+#game-banner {
+    max-width: 600px;
+    width: 90%;
+    height: auto;
+}
+
+.game-title {
+    color: #ffffff;
+    font-size: 2.5em;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px black;
+}
+
+/* ============================= */
+/* Secciones de contenido         */
+/* ============================= */
+.content-section {
+    max-width: 800px;
+    margin: 30px auto; /* centrado horizontal */
+    padding: 20px;
+    background-color: #2b2b2b;
+    border: 2px solid #4d0000;
+    border-radius: 8px;
+}
+
+.section-title {
+    color: #ff4d4d; /* rojo llamativo para los titulos */
+    border-bottom: 2px solid #ff4d4d;
+    padding-bottom: 5px;
+}
+
+.section-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* ============================= */
+/* Tarjetas de personajes         */
+/* ============================= */
+.character-card {
+    background-color: #1f1f1f;
+    border: 1px solid #666;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.character-name {
+    color: #ffcc00; /* amarillo, para resaltar el nombre */
+    font-size: 1.5em;
+}
+
+.character-image {
+    width: 150px;
+    height: auto;
+    margin: 10px 0;
+    border: 2px solid #ffcc00;
+    border-radius: 6px;
+}
+
+.character-description {
+    text-align: left;
+    margin: 10px 20px;
+}
+
+.character-abilities {
+    text-align: left;
+    margin: 10px 20px;
+    color: #cccccc;
+}
+
+/* Un poco de estilo distinto para cada personaje usando su id */
+#isaac-card {
+    border-color: #66b3ff;
+}
+
+#bluebaby-card {
+    border-color: #3399ff;
+}
+
+/* ============================= */
+/* Pie de pagina                  */
+/* ============================= */
+#main-footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #3b0a0a;
+    color: #cccccc;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
