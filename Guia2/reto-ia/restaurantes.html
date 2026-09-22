@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantes - Directorio Comercial El Salvador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER (Idéntico a index) -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">DirectorioSV</a>
+            <form class="search-bar" role="search">
+                <input type="text" placeholder="Buscar en Restaurantes...">
+                <button type="submit">Buscar</button>
+            </form>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="has-dropdown">
+                        <button type="button" class="dropdown-toggle" aria-expanded="false">Categorías ▾</button>
+                        <ul class="dropdown">
+                            <li><a href="restaurantes.html">Restaurantes</a></li>
+                            <li><a href="index.html#categorias">Automotriz</a></li>
+                            <li><a href="index.html#categorias">Construcción</a></li>
+                            <li><a href="index.html#categorias">Tecnología</a></li>
+                            <li><a href="index.html#categorias">Bienes Raíces</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#nosotros">Nosotros</a></li>
+                    <li><a href="contacto.html" class="btn btn-outline" style="padding: 8px 16px;">Registrar Negocio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HEADER DE CATEGORIA -->
+    <section class="categories" style="padding-bottom: 40px;">
+        <div class="section-heading animate-fade-in">
+            <p class="hero-eyebrow">Categoría</p>
+            <h1>Restaurantes y Comida</h1>
+            <p>Descubre los mejores sabores locales, desde pupuserías icónicas hasta cocina de autor.</p>
+        </div>
+    </section>
+
+    <!-- GRID DE NEGOCIOS -->
+    <section class="animate-fade-in" style="background-color: var(--color-cream-canvas); padding-top: 40px;">
+        <div class="business-grid">
+
+            <!-- Tarjeta 1 -->
+            <div class="business-card">
+                <span class="badge-online">Destacado</span>
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=600" alt="Pizza">
+                <h3>La Pizzería del Centro</h3>
+                <p>Pizzas artesanales en horno de leña, pastas frescas y ambiente familiar en el corazón de San Salvador.</p>
+                <a href="#" class="ghost-link">Ver menú y pedir →</a>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="business-card">
+                <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&q=80&w=600" alt="Pupusas">
+                <h3>Pupusería Doña Carmen</h3>
+                <p>Las tradicionales y auténticas pupusas salvadoreñas. Especialidad en masa de arroz y curtido picante.</p>
+                <a href="#" class="ghost-link">Ver ubicación →</a>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="business-card">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&q=80&w=600" alt="Hamburguesa">
+                <h3>Burger Spot SV</h3>
+                <p>Hamburguesas estilo smash, papas trufadas y malteadas. El lugar perfecto para tu antojo de fin de semana.</p>
+                <a href="#" class="ghost-link">Ver menú →</a>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="business-card">
+                <img src="https://images.unsplash.com/photo-1498837167922-41c543b836dc?auto=format&fit=crop&q=80&w=600" alt="Mariscos">
+                <h3>Mares del Sur</h3>
+                <p>Cocteles, ceviches y mariscos frescos traídos directo de la costa salvadoreña cada mañana.</p>
+                <a href="#" class="ghost-link">Reservar mesa →</a>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="business-card">
+                <span class="badge-online">Nuevo</span>
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=600" alt="Café">
+                <h3>Café Volcánico</h3>
+                <p>Café de especialidad cultivado en nuestras montañas, postres artesanales y desayunos todo el día.</p>
+                <a href="#" class="ghost-link">Ver menú →</a>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="business-card">
+                <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&q=80&w=600" alt="Asados">
+                <h3>El Gran Asador</h3>
+                <p>Cortes de carne premium, parrillas familiares y ambiente campestre ideal para domingos en familia.</p>
+                <a href="#" class="ghost-link">Ver ubicación →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo">DirectorioSV</a>
+                <p>Tu centro comercial en línea. Conectamos comercios salvadoreños con las personas que los buscan.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="index.html#nosotros">Quiénes Somos</a></li>
+                    <li><a href="contacto.html">Contáctenos</a></li>
+                    <li><a href="contacto.html">Registrar mi negocio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>WhatsApp: 6448-9802</li>
+                    <li>info@directoriocomercial.sv</li>
+                    <li>Lunes a Sábado, 8:00 - 18:00</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Síguenos</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">X / Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Directorio Comercial El Salvador. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+        const dropdownParent = document.querySelector('.has-dropdown');
+        dropdownToggle.addEventListener('click', function () {
+            const isOpen = dropdownParent.classList.toggle('open');
+            dropdownToggle.setAttribute('aria-expanded', isOpen);
+        });
+        document.addEventListener('click', function (event) {
+            if (!dropdownParent.contains(event.target)) {
+                dropdownParent.classList.remove('open');
+                dropdownToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    </script>
+</body>
+</html>

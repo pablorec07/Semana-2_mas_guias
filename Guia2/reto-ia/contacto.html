@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Registro - Directorio Comercial El Salvador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER (Idéntico a index) -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">DirectorioSV</a>
+            <form class="search-bar" role="search">
+                <input type="text" placeholder="Buscar un comercio...">
+                <button type="submit">Buscar</button>
+            </form>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="has-dropdown">
+                        <button type="button" class="dropdown-toggle" aria-expanded="false">Categorías ▾</button>
+                        <ul class="dropdown">
+                            <li><a href="restaurantes.html">Restaurantes</a></li>
+                            <li><a href="index.html#categorias">Automotriz</a></li>
+                            <li><a href="index.html#categorias">Construcción</a></li>
+                            <li><a href="index.html#categorias">Tecnología</a></li>
+                            <li><a href="index.html#categorias">Bienes Raíces</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#nosotros">Nosotros</a></li>
+                    <li><a href="contacto.html" class="btn btn-outline" style="padding: 8px 16px;">Registrar Negocio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCION SPLIT: FORMULARIO Y FOTO -->
+    <section class="split-section animate-fade-in" style="background-color: var(--color-sage-mist);">
+        <div class="split-container">
+            <div class="split-text">
+                <p class="hero-eyebrow">Únete al directorio</p>
+                <h2>Registra tu negocio</h2>
+                <p style="font-size: 18px; margin-bottom: 30px;">
+                    Dale visibilidad a tu marca. Llena el siguiente formulario para iniciar tu inscripción y recibir un 35% de descuento en el plan anual.
+                </p>
+
+                <form class="registro-form">
+                    <input type="text" placeholder="Nombre de tu negocio" required>
+                    <select required>
+                        <option value="" disabled selected>Selecciona una categoría</option>
+                        <option value="restaurantes">Restaurantes y Comida</option>
+                        <option value="salud">Salud y Bienestar</option>
+                        <option value="automotriz">Automotriz</option>
+                        <option value="tecnologia">Tecnología</option>
+                        <option value="otros">Otra</option>
+                    </select>
+                    <input type="email" placeholder="Correo electrónico de contacto" required>
+                    <input type="tel" placeholder="Teléfono / WhatsApp" required>
+                    <textarea placeholder="Breve descripción de los productos o servicios que ofreces..."></textarea>
+
+                    <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Enviar Solicitud</button>
+                </form>
+            </div>
+
+            <div class="split-image">
+                <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80&w=800" alt="Propietaria de negocio local">
+            </div>
+        </div>
+    </section>
+
+    <!-- INFO DIRECTA DE CONTACTO -->
+    <section class="animate-fade-in" style="padding: 80px 24px; background-color: var(--color-cream-canvas);">
+        <div class="section-heading" style="text-align: center;">
+            <h2>¿Tienes dudas?</h2>
+            <p>Comunícate directamente con nuestro equipo de soporte.</p>
+        </div>
+
+        <div class="contacto-grid" style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <div class="category-card" style="background-color: var(--color-warm-sand); padding: 40px 20px;">
+                <h4 style="color: var(--color-deep-forest); font-size: 20px;">Atención por WhatsApp</h4>
+                <p style="font-size: 24px; font-weight: 700; margin-top: 10px;">+503 6448-9802</p>
+                <a href="#" class="ghost-link" style="margin-top: 20px; justify-content: center;">Iniciar chat →</a>
+            </div>
+            <div class="category-card" style="background-color: var(--color-warm-sand); padding: 40px 20px;">
+                <h4 style="color: var(--color-deep-forest); font-size: 20px;">Correo Electrónico</h4>
+                <p style="font-size: 16px; margin-top: 10px; word-break: break-all;">info@directoriocomercial.sv</p>
+                <a href="#" class="ghost-link" style="margin-top: 20px; justify-content: center;">Enviar correo →</a>
+            </div>
+            <div class="category-card" style="background-color: var(--color-warm-sand); padding: 40px 20px;">
+                <h4 style="color: var(--color-deep-forest); font-size: 20px;">Horario de Atención</h4>
+                <p style="font-size: 16px; margin-top: 10px;">Lunes a Sábado<br>8:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo">DirectorioSV</a>
+                <p>Tu centro comercial en línea. Conectamos comercios salvadoreños con las personas que los buscan.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="index.html#nosotros">Quiénes Somos</a></li>
+                    <li><a href="contacto.html">Contáctenos</a></li>
+                    <li><a href="contacto.html">Registrar mi negocio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>WhatsApp: 6448-9802</li>
+                    <li>info@directoriocomercial.sv</li>
+                    <li>Lunes a Sábado, 8:00 - 18:00</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Síguenos</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">X / Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Directorio Comercial El Salvador. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+        const dropdownParent = document.querySelector('.has-dropdown');
+        dropdownToggle.addEventListener('click', function () {
+            const isOpen = dropdownParent.classList.toggle('open');
+            dropdownToggle.setAttribute('aria-expanded', isOpen);
+        });
+        document.addEventListener('click', function (event) {
+            if (!dropdownParent.contains(event.target)) {
+                dropdownParent.classList.remove('open');
+                dropdownToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    </script>
+</body>
+</html>

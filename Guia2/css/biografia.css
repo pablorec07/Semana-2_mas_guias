@@ -1,0 +1,328 @@
+/* ===== Variables ===== */
+:root {
+    --color-fondo: #15121c;
+    --color-superficie: #1b2926;
+    --color-superficie-alt: #352222;
+    --color-acento: #e0d558;
+    --color-acento-2: #033643;
+    --color-texto: #f1efe8;
+    --color-texto-tenue: #a9b0ba;
+    --color-borde: rgba(255, 255, 255, 0.08);
+
+    --fuente-titulos: "Orbitron", sans-serif;
+--fuente-texto: "Rubik", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-texto);
+    line-height: 1.7;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 88%;
+    max-width: 900px;
+}
+
+/* ===================== PORTADA ===================== */
+.portada {
+    background: radial-gradient(circle at top, var(--color-superficie-alt), var(--color-fondo));
+    padding: 60px 20px;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.portada-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foto-perfil {
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 12px;
+    border: 3px solid var(--color-acento);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.45);
+}
+
+.portada-texto {
+    flex: 1;
+    min-width: 240px;
+    text-align: center;
+}
+
+.etiqueta {
+    display: inline-block;
+    color: var(--color-acento);
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid var(--color-acento);
+    border-radius: 20px;
+    padding: 5px 14px;
+    margin-bottom: 16px;
+}
+
+.portada h1 {
+    font-family: var(--fuente-titulos);
+    font-size: 2.1rem;
+    line-height: 1.3;
+    margin: 0 0 14px;
+    letter-spacing: 1px;
+}
+
+/* Pseudo-elemento first-letter en la cita */
+.quote {
+    font-style: italic;
+    color: var(--color-texto-tenue);
+    max-width: 32ch;
+    margin: 0 auto;
+}
+
+.quote::first-letter {
+    color: var(--color-acento);
+    font-size: 1.6em;
+    font-family: var(--fuente-titulos);
+}
+
+@media (min-width: 640px) {
+    .portada-texto {
+        text-align: left;
+    }
+
+    .quote {
+        margin: 0;
+    }
+}
+
+/* ===================== NAVEGACION ===================== */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--color-superficie);
+    border-bottom: 1px solid var(--color-borde);
+    padding: 6px 0;
+}
+
+/* Selector de hijos: solo los <a> que son hijos directos de nav */
+nav > a {
+    color: var(--color-texto-tenue);
+    text-decoration: none;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 16px 18px;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+    color: var(--color-acento);
+    border-bottom-color: var(--color-acento);
+}
+
+nav a:active {
+    color: var(--color-texto);
+}
+
+/* ===================== BLOQUES GENERALES ===================== */
+.bloque {
+    padding-top: 60px;
+}
+
+h2 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-acento);
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--color-borde);
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+
+/* Selector descendiente: cualquier parrafo dentro de un bloque */
+.bloque p {
+    color: var(--color-texto-tenue);
+    text-align: justify;
+}
+
+/* Pseudo-elemento en la primera letra del primer parrafo de cada bloque */
+.bloque p:first-child::first-letter {
+    color: var(--color-acento);
+    font-family: var(--fuente-titulos);
+    font-size: 1.8rem;
+}
+
+/* Pseudo-elemento en la primera linea del primer parrafo de Quien soy */
+#quien-soy p:first-child::first-line {
+    color: var(--color-texto);
+}
+
+/* ===================== TARJETAS DE JUEGOS ===================== */
+.juegos {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 24px;
+}
+
+.juego-card {
+    position: relative;
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: 10px;
+    padding: 20px 20px 24px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.juego-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
+    border-color: var(--color-acento);
+}
+
+.juego-card img {
+    width: 100%;
+    max-width: 420px;
+    display: block;
+    border-radius: 8px;
+    margin: 6px 0 16px;
+    transition: transform 0.35s ease;
+}
+
+.juego-card:hover img {
+    transform: scale(1.03);
+}
+
+.juego-card h3 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-texto);
+    margin: 0 0 10px;
+}
+
+.puesto {
+    display: inline-block;
+    color: var(--color-acento-2);
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: 1px solid var(--color-acento-2);
+    border-radius: 20px;
+    padding: 3px 12px;
+    margin-bottom: 10px;
+}
+
+/* Selector adyacente: separa cada tarjeta de la que viene justo despues */
+.juego-card + .juego-card {
+    margin-top: 4px;
+}
+
+/* ===================== FUN FACTS ===================== */
+.facts-grid {
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-top: 24px;
+}
+
+.facts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.facts li {
+    background-color: var(--color-superficie);
+    border-left: 3px solid var(--color-acento);
+    padding: 14px 18px;
+}
+
+/* Pseudo-clase nth-child: alterna el tono de fondo de cada fact */
+.facts li:nth-child(odd) {
+    background-color: var(--color-superficie);
+}
+
+.facts li:nth-child(even) {
+    background-color: var(--color-superficie-alt);
+}
+
+/* Selector adyacente: separacion entre facts consecutivos */
+.facts li + li {
+    margin-top: 0;
+}
+
+.nina-card {
+    margin: 0;
+    width: 220px;
+    text-align: center;
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.nina-card:hover {
+    transform: translateY(-6px) rotate(-1deg);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
+}
+
+.nina-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.nina-card figcaption {
+    padding: 10px;
+    font-family: var(--fuente-titulos);
+    color: var(--color-acento);
+    letter-spacing: 1px;
+}
+
+/* ===================== PIE DE PAGINA ===================== */
+footer {
+    text-align: center;
+    color: var(--color-texto-tenue);
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-top: 1px solid var(--color-borde);
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (min-width: 640px) {
+    .juegos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .juego-card {
+        flex: 1 1 calc(33.333% - 22px);
+    }
+}

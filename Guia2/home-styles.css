@@ -1,0 +1,67 @@
+/* Estilos generales de la pagina de inicio */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#home-header {
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+#home-header .subtitle {
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+#home-content {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.link-group {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.link-group h2 {
+    color: #2196F3;
+    margin-top: 0;
+}
+
+.link-group ul {
+    list-style: none;
+    padding: 0;
+}
+
+.link-group li {
+    margin: 10px 0;
+}
+
+.link-group a {
+    display: inline-block;
+    color: #2196F3;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.link-group a:hover {
+    text-decoration: underline;
+    color: #0d47a1;
+}
+
+#home-footer {
+    text-align: center;
+    padding: 15px;
+    color: #777;
+    font-size: 0.9em;
+}
