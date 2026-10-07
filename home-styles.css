@@ -1,4 +1,10 @@
-/* Estilos generales de la pagina de inicio */
+/* =========================================================
+   PÁGINA PRINCIPAL - TODAS LAS GUÍAS
+   ========================================================= */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
@@ -8,60 +14,116 @@ body {
 }
 
 #home-header {
-    background-color: #2196F3;
+    background: linear-gradient(135deg, #1976D2, #2196F3);
     color: white;
     text-align: center;
-    padding: 30px 20px;
+    padding: 50px 20px 60px;
+}
+
+#home-header h1 {
+    margin: 0;
+    font-size: 2.4em;
 }
 
 #home-header .subtitle {
     font-size: 1.1em;
-    margin-top: 5px;
+    margin: 10px 0 0;
+    opacity: 0.9;
 }
 
+/* Grid principal: una tarjeta por guía */
 #home-content {
-    max-width: 700px;
-    margin: 30px auto;
+    max-width: 1200px;
+    margin: -30px auto 40px;
     padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    align-items: start;
 }
 
-.link-group {
+.guide-card {
     background-color: white;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.link-group h2 {
-    color: #2196F3;
-    margin-top: 0;
+.guide-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    padding-bottom: 16px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #e3f2fd;
+}
+
+.guide-number {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #2196F3;
+    color: white;
+    border-radius: 12px;
+
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.guide-head h2 {
+    margin: 0;
+    color: #1976D2;
+}
+
+.guide-head p {
+    margin: 4px 0 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.link-group h3 {
+    margin: 18px 0 6px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #777;
 }
 
 .link-group ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .link-group li {
-    margin: 10px 0;
+    margin: 4px 0;
 }
 
 .link-group a {
-    display: inline-block;
+    display: block;
+    padding: 8px 12px;
+
     color: #2196F3;
     text-decoration: none;
-    font-size: 1.1em;
+    border-radius: 6px;
 }
 
 .link-group a:hover {
-    text-decoration: underline;
+    background-color: #e3f2fd;
     color: #0d47a1;
 }
 
 #home-footer {
     text-align: center;
-    padding: 15px;
+    padding: 15px 15px 30px;
     color: #777;
     font-size: 0.9em;
 }
