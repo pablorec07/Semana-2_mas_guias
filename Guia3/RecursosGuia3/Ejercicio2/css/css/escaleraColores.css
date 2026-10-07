@@ -1,0 +1,21 @@
+/* RESULTADO 2: mismas posiciones, pero el orden de apilado se invierte
+   (el diez queda al frente y el as al fondo) */
+
+#diez_de_diamantes,
+#sota_de_diamantes,
+#reina_de_diamantes,
+#rey_de_diamantes,
+#as_de_diamantes {
+  position: absolute;
+}
+
+img {
+  display: block;
+}
+
+/* Las coordenadas son iguales; solo cambia z-index (ahora baja con cada carta) */
+#diez_de_diamantes  { top: 120px; left: 100px; z-index: 5; }
+#sota_de_diamantes  { top: 136px; left: 116px; z-index: 4; }
+#reina_de_diamantes { top: 152px; left: 132px; z-index: 3; }
+#rey_de_diamantes   { top: 168px; left: 148px; z-index: 2; }
+#as_de_diamantes    { top: 184px; left: 164px; z-index: 1; }
