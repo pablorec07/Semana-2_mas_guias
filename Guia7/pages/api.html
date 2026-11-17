@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complementario - Consumo de API</title>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link rel="icon" href="../img/js.png" sizes="32x32" type="image/png">
+</head>
+<body class="bg-light">
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                <a href="../index.html" class="d-flex align-items-center text-white text-decoration-none">
+                    <img src="../img/js.png" class="me-2" width="42" height="42" alt="JavaScript">
+                    <span class="fw-bold">Guía 07 - DOM</span>
+                </a>
+                <nav class="nav">
+                    <a href="../index.html" class="nav-link px-2 text-white">Inicio</a>
+                    <a href="ejemplo1.html" class="nav-link px-2 text-white">Ejemplo 1</a>
+                    <a href="ejemplo2.html" class="nav-link px-2 text-white">Ejemplo 2</a>
+                    <a href="ejemplo3.html" class="nav-link px-2 text-white">Ejemplo 3</a>
+                    <a href="ejemplo4.html" class="nav-link px-2 text-white">Ejemplo 4</a>
+                    <a href="api.html" class="nav-link px-2 text-warning fw-bold">API</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="text-center mb-4">
+            <h1 class="display-5 fw-bold">Catálogo de videojuegos gratuitos</h1>
+            <p class="lead">Consumo de una API mediante Fetch API y async/await</p>
+            <p class="text-muted">Listado de juegos y consulta de detalles sin recargar la página.</p>
+        </div>
+
+        <section class="card shadow-sm mb-4">
+            <div class="card-body">
+                <label for="idApiKey" class="form-label fw-bold">Clave personal de RapidAPI</label>
+                <div class="input-group">
+                    <input type="password" class="form-control" id="idApiKey" placeholder="Pegue aquí su x-rapidapi-key" autocomplete="off">
+                    <button class="btn btn-primary" type="button" id="idBtnCargar">Cargar videojuegos</button>
+                </div>
+                <div class="form-text">La clave se utiliza únicamente para las solicitudes de esta sesión y no se guarda en el navegador.</div>
+                <div id="idEstadoApi" class="mt-3" role="status" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <div class="row g-4">
+            <section class="col-lg-7">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h2 class="h4 mb-0">Listado de videojuegos</h2>
+                    <span class="badge text-bg-secondary" id="idCantidadJuegos">0 juegos</span>
+                </div>
+                <div id="idListaJuegos" class="row g-3"></div>
+            </section>
+
+            <section class="col-lg-5">
+                <div class="card shadow-sm sticky-top" style="top: 1rem;">
+                    <div class="card-body">
+                        <h2 class="h4">Detalle del videojuego</h2>
+                        <p class="text-muted" id="idDetalleVacio">Seleccione un juego del listado para consultar su información.</p>
+                        <div id="idDetalleJuego"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/rapidapi.js" defer></script>
+</body>
+</html>

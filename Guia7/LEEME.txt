@@ -1,0 +1,31 @@
+GUIA DE LABORATORIO 07 - DESARROLLO WEB I
+Proyecto preparado a partir de Guia 07.pdf y RecursosGuia7.zip.
+
+ESTRUCTURA
+- index.html: pagina principal y Ejemplo 1.
+- pages/ejemplo1.html + js/ejemplo1.js: Ejemplo 2, crear formulario con DOM.
+- pages/ejemplo2.html + js/ejemplo2.js: Ejemplo 3 y Complementario 1.
+- pages/ejemplo3.html + js/ejemplo3.js: Ejemplo 4, manipulacion de estilos con DOM.
+- pages/ejemplo4.html + js/ejemplo4.js: Ejemplo 4, creacion de un sitio web.
+- pages/api.html + js/rapidapi.js: Complementario 2, consumo de dos endpoints RapidAPI.
+
+COMO EJECUTAR
+1. Descomprima esta carpeta.
+2. Abra la carpeta en Visual Studio Code.
+3. Ejecute index.html usando Live Server.
+4. Navegue por los ejemplos desde el menu superior.
+
+COMPLEMENTARIO 1
+En Ejemplo 2, complete todos los campos, seleccione al menos un interes, una carrera, un pais y una imagen de avatar.
+Las contrasenas deben coincidir y la fecha de nacimiento no puede estar en el futuro. Si la informacion es valida, se muestra en una tabla dentro del modal de Bootstrap. La tabla se construye con createElement, createTextNode y appendChild; no se utiliza innerHTML en este desarrollo.
+
+COMPLEMENTARIO 2 - RAPIDAPI
+La aplicacion esta configurada para Free-To-Play Games Database y utiliza estos endpoints:
+- GET /api/games?sort-by=popularity (listado).
+- GET /api/game?id=ID (detalle).
+
+IMPORTANTE: RapidAPI requiere una clave personal (x-rapidapi-key). En pages/api.html pegue su propia clave y presione Cargar videojuegos. La clave se utiliza durante esa sesion y no se guarda en localStorage.
+La guia exige seleccionar un plan gratuito en el catalogo de RapidAPI. Como se pidio trabajar unicamente con los archivos entregados y no realizar busquedas externas, no se verificaron desde aqui la disponibilidad actual del plan gratuito, las cuotas ni el estado del proveedor. Antes de entregar, confirme en RapidAPI que la API elegida ofrece un plan gratuito y active la suscripcion correspondiente. Sin esa clave y suscripcion, las llamadas no podran probarse desde el navegador.
+
+NOTA DE ENTREGA
+La guia indica nombrar la carpeta Guia7_[su numero de carnet]. Renombre Guia7_Entrega usando su numero de carnet antes de entregar.
